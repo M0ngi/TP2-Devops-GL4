@@ -28,5 +28,3 @@ services:
       MONGO_PASSWORD: "root"
       MONGO_HOST: "db"
       MONGO_URI: "mongodb+srv://root:root@db/db"
-
-volumes: db
