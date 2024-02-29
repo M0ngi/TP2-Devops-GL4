@@ -27,4 +27,4 @@ jobs:
         docker-compose build 
     - name: Push Docker Images
       run: |
-        docker-compose push
+        docker-compose push m0ng1/tp2-gl4-devops
