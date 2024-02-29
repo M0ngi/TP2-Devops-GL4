@@ -30,9 +30,11 @@ import { ConfigService } from '@app_config/config.service';
       inject: [ConfigService],
       useFactory: async (
         configService: ConfigService,
-      ): Promise<MongooseModuleFactoryOptions> => ({
-        ...configService.getDatabaseConfig(),
-      }),
+      ): Promise<MongooseModuleFactoryOptions> => {
+        return {
+          ...configService.getDatabaseConfig(),
+        }
+      },
     }),
     UsersModule,
   ],
