@@ -7,7 +7,7 @@ services:
 
   backend:
     build: .
-    image: tp2-gl4-devops
+    image: m0ng1/tp2-gl4-devops
     container_name: tp2-gl4-devops-container
     ports:
       - "8000:8000"
